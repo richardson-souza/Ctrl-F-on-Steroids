@@ -1,0 +1,11 @@
+langchain
+langchain_community
+sentence-transformers
+ollama
+chromadb
+PyYAML
+sql-metadata
+langchain-huggingface
+langchain-chroma
+langchain-ollama
+lark
