@@ -173,10 +173,10 @@ class YamlProcessor(BaseProcessor):
 
                     owner = dag_info.get("default_args", {}).get("owner", "N/A")
                     schedule = dag_info.get("schedule_interval", "N/A")
-                    description = dag_info.get(
+                    dag_description = dag_info.get(
                         "description", "No description provided."
                     )
-                    summary_text = f"This document describes the DAG configuration with ID '{dag_id}'. The owner is '{owner}', it runs on schedule: '{schedule}', and its description is: '{description}'."
+                    summary_text = f"This document describes the DAG configuration with ID '{dag_id}'. The owner is '{owner}', it runs on schedule: '{schedule}', and its description is: '{dag_description}'."
                     documents.append(
                         Document(page_content=summary_text, metadata=source_metadata)
                     )

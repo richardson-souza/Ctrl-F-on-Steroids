@@ -9,3 +9,4 @@ langchain-huggingface
 langchain-chroma
 langchain-ollama
 lark
+pytest
