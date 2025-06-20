@@ -2,7 +2,7 @@ import ast
 from typing import List
 from langchain.docstore.document import Document
 
-from base_processor import BaseProcessor
+from .base_processor import BaseProcessor
 
 
 class PythonProcessor(BaseProcessor):

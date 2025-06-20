@@ -3,7 +3,7 @@ from typing import List
 from langchain.docstore.document import Document
 from sql_metadata.parser import Parser
 
-from processor.base_processor import BaseProcessor
+from .base_processor import BaseProcessor
 
 
 class SqlProcessor(BaseProcessor):

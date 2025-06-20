@@ -40,7 +40,7 @@ class VectorStoreManager:
         self.persist_directory = config.VECTOR_DB_PATH
         self.client = chromadb.PersistentClient(path=self.persist_directory)
 
-    def create_store_from_documents(self, documents: List[Document]):
+    def create_store_from_documents(self, documents: List[Document], is_test = False):
         """
         Creates a new Chroma vector store from a list of documents and persists it.
 
@@ -52,6 +52,18 @@ class VectorStoreManager:
             documents: A list of `langchain.docstore.document.Document` objects
                        to be added to the vector store.
         """
+
+        if is_test:
+            print("Creating new vector store to test...")
+            Chroma.from_documents(
+                documents=documents,
+                embedding=self.embedding_function,
+                persist_directory=self.persist_directory,
+                collection_name="test_collection"
+            )
+            print("Vector store created and saved to test.")
+            return
+
         print("Creating new vector store...")
         Chroma.from_documents(
             documents=documents,

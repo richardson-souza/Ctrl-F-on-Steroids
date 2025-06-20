@@ -3,7 +3,7 @@ from langchain_community.document_loaders import TextLoader
 from typing import List
 from langchain.docstore.document import Document
 
-from base_processor import BaseProcessor
+from .base_processor import BaseProcessor
 
 
 class JsonProcessor(BaseProcessor):
