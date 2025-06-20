@@ -32,7 +32,7 @@ def main():
 
     vector_store_manager = VectorStoreManager()
 
-    vector_store_manager.create_store_from_documents(documents)
+    vector_store_manager.create_store_from_documents(documents=documents, is_test=config.TEST_COLLECTION)
 
     print("✅ Indexing complete.")
 
