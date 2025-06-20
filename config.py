@@ -17,5 +17,7 @@ VECTOR_DB_PATH = "./chroma_db"
 
 # --- Data Loader Configuration ---
 # File extensions to include in the search
-ALLOWED_EXTENSIONS = {".py", ".sql", ".md", ".json", ".yaml"}
+ALLOWED_EXTENSIONS = {".yaml"} # {".py", ".sql", ".md", ".json", ".yaml"}
+
+TEST_COLLECTION=True
 
