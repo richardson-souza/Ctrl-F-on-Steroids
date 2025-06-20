@@ -1,0 +1,17 @@
+[
+  {
+    "question": "Which script does the classificacao_seller task run?",
+    "expected_ids": ["excelencia_seller_score:classificacao_seller"],
+    "type": "single_must_find"
+  },
+  {
+    "question": "What is the schedule for the seller score DAG?",
+    "expected_ids": ["excelencia_seller_score:__DAG_SUMMARY__"],
+    "type": "single_must_find"
+  },
+  {
+    "question": "Who owns the dag 'excelencia_seller_score'?",
+    "expected_ids": ["excelencia_seller_score:__DAG_SUMMARY__"],
+    "type": "single_must_find"
+  }
+]
